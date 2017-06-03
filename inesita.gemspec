@@ -15,7 +15,8 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = ['lib']
 
-  s.add_dependency 'opal-sprockets', '~> 0.4.0.0.11.0.rc1.3.1.beta'
+  s.add_dependency 'opal', '>= 0.10.4', '< 0.12'
+  s.add_dependency 'opal-sprockets'
   s.add_dependency 'opal-virtual-dom', '~> 0.5.0'
   s.add_dependency 'thor', '~> 0.19'
   s.add_dependency 'rack-rewrite', '~> 1.5'
